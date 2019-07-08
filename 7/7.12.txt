@@ -1,0 +1,78 @@
+1. 声明、实现、调用；
+2. a. void igor(void);
+   b. float tofu(int);
+   c. double mpg(double, double);
+   d. long summation(long [], int);
+   e. double doctor(const char *);
+   f. void ofcource(boss);
+   g. char * plot (map*);
+
+3. void set_array(int arr[], int size, int value)
+{
+ for (int i = 0; i < size; i++) arr[i] = value;
+}
+
+4. void set_array(int * begin, int * end, int value)
+{
+ for (int * pt = begin; pt != end; pt++) 8pt = value;
+}
+
+5. double biggest (const double foot[], int size)
+{
+ double max;
+ if (size < 1)
+ {
+  cout << "Invalid array size of " << size << endl;
+  cout << "Returning a value of 0\n";
+  return 0;
+ }
+ else
+ {
+  max = foot[0];
+  for (int = 1; i < size; i++)
+    if (foot[i] > max) max = foot[i];
+  return max;
+ }
+}
+
+6. 基本类型本身就是值传递。
+7.字符串常量、字符数组、字符指针。
+8. int replace(char *str, char c1, char c2)
+{
+ int count = 0;
+ while(*str)
+ {
+  if(*str == c1)
+  {
+   *str = c2;
+   count++;
+  }
+  str++;
+ }
+ return count;
+}
+
+9. p,c
+10. 值传递：glitz,保护原始数据，牺牲内存和时间，可使用.；
+    址传递：&glitz,节省内存和时间，不保护原始数据，只能使用->。
+
+11. int judge(int (*)(const char *));
+
+12. a. void display(applicant ap)
+{
+    cout << ap.name << endl;
+    for (int i = 0; i < 3; i++) cout << ap.credit_ratings[i] << endl;
+}
+
+    b.void show(const applicant * pa)
+{
+    cout << pa->name <<endl;
+    for (int i = 0; i < 3; i++) cout << pa->credit_ratings[i] << endl;
+}
+
+13. typedef void (*p_f1) (applicant *);
+    p_f1 p1 = f1;
+    typedef const char * (*p_f2)(const applicant *, const applicant *);
+    p_f2 p2 = f2;
+    p_f1 ap[5];
+    p_f2 (*pa)[10];

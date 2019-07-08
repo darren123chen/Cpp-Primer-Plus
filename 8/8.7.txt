@@ -1,0 +1,54 @@
+1. 小型、非递归函数。
+2. a. void song (const char * name, int times = 1);
+   b. 无
+   c. void song (const char * name = "O.My papa", int times = 1);
+
+3. #include <iostream>
+   void iquote(int n)
+{
+cout << "\"" << "" n << "\"";
+}
+
+   void iquote(double x)
+{
+cout << '"' << x << '"';
+}
+
+   void iquote(char * str)
+{
+ cout << "\"" << str << "\"";
+}
+
+4. a. void show_box(const box & container)
+{
+ cout << "Made by " << container.maker << endl;
+ cout << "Height = " << container.height << endl;
+ cout << "Width = " << container.width << endl;
+ cout << "Length = " << container.length << endl;
+ cout << "Volume = " << container.volume << endl;
+}
+
+  b. void set_volume(box & crate)
+{
+ crate.volume = crate.height * crate.length * crate.length;
+}
+
+6. a. double mass(double d, double v = 1.0);
+   b.void repeat(int times, const char * str);
+     void repeat(const char * str);
+   c.int average(int a, int b);
+     double average(double x, double y);
+   d. 不行，特征标相同。
+
+7. template<class T>
+   T max(T t1, T t2)
+{
+ return t1 > t2? t1 : t2;
+}
+
+8. template<> box max(box b1, box b2)
+{
+ return b1.volume > b2.volume? b1 : b2;
+}
+
+9.v1:float; v2:float &;v3:float &;v4:int;v5:double.

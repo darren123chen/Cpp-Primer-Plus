@@ -1,0 +1,27 @@
+1. Version 1 效率更高；
+2. a. weight >= 115 && weight < 125;
+   b. ch == 'q' || ch == 'Q';
+   c. x % 2 == 0 && x != 26;
+   d. x % 2 == 0 && x % 26 != 0;
+   e. (donation >= 1000 && donation <= 2000) || donation == 1;
+   f. (ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z');
+
+5. 不一定。
+6. (x >= 0) ? x : -x;
+7. switch (ch)
+{
+  case 'A' : a_grade++; break;
+  case 'B' : b_grade++; break;
+  case 'C' : c_grade++; break;
+  case 'D' : d_grade++; break;
+  default : f_grade++;
+}
+
+8. 整数标签输入了'q'，会挂起而不是default。
+9. int line = 0;
+   char ch;
+   while (cin.get(ch) && ch != 'Q')
+{
+if (ch == '\n')
+line++;
+}

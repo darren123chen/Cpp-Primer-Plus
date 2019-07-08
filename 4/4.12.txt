@@ -1,0 +1,48 @@
+1. a. char actor[30];
+   b. short betsie[100];
+   c. float chuck[13];
+   d. long double dipsea[64];
+
+2. a. array<char, 30> actor;
+   b. array<short, 100> betsie;
+   c. array<float, 13> chuck;
+   d. array<long double, 64> dipsea;
+
+3. int foo[5] = {1, 3, 5, 7, 9};
+4. int even = foo[0] + foo[4];
+5. float foo = ideas[1];
+6. char foo[80] = "cheeseburger";
+7. string foo = "WaldorfSalad";
+8. struct fish {
+   char type[20];
+   int weight;
+   float length;
+};
+9. fish foo = {"trout", 12, 26.25};
+10. enum Response {No, Yes, Maybe};
+11. double * pd = &ted;
+    cout << *pd << "\n";
+12. float * pf = treacle;
+    cout << pf[0] << " " << pf[9] << "\n";
+
+13.unsigned int size;
+   cout << "Enter a positive integer: ";
+   cin >> size;
+   int * dyn = new int [size];
+   vector<int> dv(size);
+
+14.有效，地址。
+
+15.fish * pole = new fish;
+   cout << "Enter kind of fish: ";
+   cin >> pole->type;
+
+16.跳过换行符，只读取一个单词。
+
+17.#include <string>
+   #include <vector>
+   #include <array>
+   const int Str_num {10};
+
+   std::vector<std::string> vstr(Str_num);
+   std::array<std::string, Str_Num> aStr;

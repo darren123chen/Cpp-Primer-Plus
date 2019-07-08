@@ -1,0 +1,13 @@
+1.函数
+2.导入iostream文件；
+3.使用std命名空间中的定义；
+4.cout << "Hello, world" << endl;
+5.int cheeses;
+6.cheeses = 32;
+7.cin >> cheeses;
+8.cout << "We have " << cheeses << " varieties of cheese," << endl;
+9.函数名，返回值类型，参数类型；
+10.无返回值；
+11.a.using namespace std;
+   b.using std::cout;
+   c.std::cout

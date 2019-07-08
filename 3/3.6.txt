@@ -1,0 +1,27 @@
+1.根据不同需求选择不同类型；
+2.a. short a = 80;
+  b. unsigned int b = 422110;
+  c. long long c = 300000000;
+3.climits
+4.long int 
+5.不完全等价，取决于实现；
+6. char c = 88;
+   cout << c << endl;
+   cout.put (char (88));
+
+7.取决于长度。
+
+8. a. 74;
+   b.4
+   c.0
+   d.4.5;
+   e.3
+
+9. int pos = (int)x1 + (int)x2;
+   int pos = (int) {x1 + x2};
+
+10.a. int;
+   b. float;
+   c. char;
+   d. char32_t;
+   e. double;
